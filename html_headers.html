@@ -1,0 +1,37 @@
+<script type="text/javascript">
+var ar=new Array(37,38,39,40);
+
+$(document).keydown(function(e) {
+   var key = e.which;
+    if($.inArray(key,ar) > -1) {
+        e.preventDefault();   // Защита от скролла самой страницы
+        return false;
+    }
+    return true;
+});
+
+$(document).keydown(function(evt){
+  switch (evt.which){
+  case 37:
+      $("#elt").finish().animate({
+          left: "-=10"
+      });           //  кнопка влево
+      break;
+  case 38:
+      $("#elt").finish().animate({
+          top: "-=10"
+      });           //  кнопка вверх
+      break;
+  case 39:
+      $("#elt").finish().animate({
+          left: "+=10"
+      });           //  кнопка вправо
+      break;
+  case 40:
+      $("#elt").finish().animate({
+          top: "+=10"
+      });           //  кнопка вниз
+      break;
+  }
+});
+</script>
