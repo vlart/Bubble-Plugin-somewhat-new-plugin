@@ -4,7 +4,7 @@ var ar=new Array(37,38,39,40);
 $(document).keydown(function(e) {
    var key = e.which;
     if($.inArray(key,ar) > -1) {
-        e.preventDefault();   // Защита от скролла самой страницы
+        e.preventDefault();   // Protection from page scroll
         return false;
     }
     return true;
@@ -14,23 +14,23 @@ $(document).keydown(function(evt){
   switch (evt.which){
   case 37:
       $("#elt").finish().animate({
-          left: "-=10"
-      });           //  кнопка влево
+          left: "-=_*_Left distance_*_"
+      });           //  Arrow 'LEFT'
       break;
   case 38:
       $("#elt").finish().animate({
-          top: "-=10"
-      });           //  кнопка вверх
+          top: "-=_*_Top distance_*_"
+      });           //  Arrow 'UP'
       break;
   case 39:
       $("#elt").finish().animate({
-          left: "+=10"
-      });           //  кнопка вправо
+          left: "+=_*_Right distance_*_"
+      });           //  Arrow 'RIGHT'
       break;
   case 40:
       $("#elt").finish().animate({
-          top: "+=10"
-      });           //  кнопка вниз
+          top: "+=_*_Bottom distance_*_"
+      });           //  Arrow 'BOTTOM'
       break;
   }
 });

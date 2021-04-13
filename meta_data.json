@@ -1,0 +1,13 @@
+{
+    "categories": {
+        "0": "visual elements",
+        "1": "containers",
+        "2": "input forms",
+        "3": "productivity"
+    },
+    "description": "Plugin allows you to manipulate element using arrow keys. ",
+    "image": "//s3.amazonaws.com/appforest_uf/f1505210301124x945244235452264600/images.jpg",
+    "license": "open_source",
+    "name": "arrow scroll ",
+    "plugin_instructions": "To manipulate element  just add  id =\"elt\" to it. "
+}
